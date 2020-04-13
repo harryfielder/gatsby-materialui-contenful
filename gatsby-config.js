@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Material UI Starter`,
+    title: `Harry Fielder`,
     description: `Kick off your next, great Gatsby project with this Material UI starter. This barebones starter ships with the main Gatsby and Material UI configuration files you might need.`,
-    author: `@dominicabela`,
+    author: `@fielderhe`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -42,5 +42,14 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `hkikwobb7e8q`,
+        accessToken: `n897GQ46ZUqfOwKkspKz9ONgAjnAtn9ZuowtZVKDP20`
+      }
+    },
+    `@contentful/gatsby-transformer-contentful-richtext`,
+    `@material-ui/lab`
   ],
 }

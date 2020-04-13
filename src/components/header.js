@@ -21,6 +21,9 @@ import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
 import HomeIcon from '@material-ui/icons/Home'
 import ListIcon from '@material-ui/icons/ViewList'
+import SettingsInputAntennaIcon from '@material-ui/icons/SettingsInputAntenna';
+
+
 
 const drawerWidth = 240
 
@@ -79,6 +82,9 @@ const useStyles = makeStyles(theme => ({
     }),
     marginLeft: 0,
   },
+  whiteLink: {
+    color: 'white'
+  }
 }))
 
 const Header = ({ siteTitle }) => {
@@ -115,9 +121,11 @@ const Header = ({ siteTitle }) => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" color="inherit">
-            {siteTitle}
-          </Typography>
+          <Link to="/">
+            <Typography variant="h6" color="inherit" className={classes.whiteLink}>
+              {siteTitle}
+            </Typography>
+          </Link>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -134,8 +142,8 @@ const Header = ({ siteTitle }) => {
             {theme.direction === 'ltr' ? (
               <ChevronLeftIcon />
             ) : (
-              <ChevronRightIcon />
-            )}
+                <ChevronRightIcon />
+              )}
           </IconButton>
         </div>
         <Divider />
@@ -154,6 +162,14 @@ const Header = ({ siteTitle }) => {
                 <ListIcon />
               </ListItemIcon>
               <ListItemText>Components</ListItemText>
+            </ListItem>
+          </Link>
+          <Link to="/data-fetch">
+            <ListItem button>
+              <ListItemIcon>
+                <SettingsInputAntennaIcon />
+              </ListItemIcon>
+              <ListItemText>Fetch Data</ListItemText>
             </ListItem>
           </Link>
         </List>
