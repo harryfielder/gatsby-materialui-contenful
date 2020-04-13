@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Harry Fielder`,
-    description: `Kick off your next, great Gatsby project with this Material UI starter. This barebones starter ships with the main Gatsby and Material UI configuration files you might need.`,
+    description: `Trying out a whole bunch of new static site work, contenful and heroku.`,
     author: `@fielderhe`,
   },
   plugins: [
