@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{tBlp:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),o=n("Bl7J"),c=n("vrFN");t.default=function(){return l.a.createElement(o.a,null,l.a.createElement(c.a,{title:"Page two"}),l.a.createElement("h1",null,"Components"),l.a.createElement("p",null,"Welcome to the components page."))}}}]);
-//# sourceMappingURL=component---src-pages-components-js-cbd36ed7fecf994a661c.js.map
