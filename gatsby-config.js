@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Harry Fielder`,
-    description: `Trying out a whole bunch of new static site work, contenful and heroku. Making sure we get the Procfile right!`,
+    description: `Trying out a whole bunch of new static site work, contenful and heroku. Need to get the Procfile right!`,
     author: `@fielderhe`,
   },
   plugins: [
